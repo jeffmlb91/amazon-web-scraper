@@ -1,6 +1,7 @@
 import Sidebar from '@/components/Sidebar'
 import './globals.css'
 import type { Metadata } from 'next'
+import Header from '@/components/Header'
 // import { Inter } from 'next/font/google'
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,8 @@ export default function RootLayout({
         {/**sidebar */}
         <Sidebar />
         <main className="p-10 max-w-7xl w-fill mx-auto overflow-y-auto">  
-          {/**sidebar */}
+          {/**Header */}
+          <Header />
          {children}
         </main>
       </body>
