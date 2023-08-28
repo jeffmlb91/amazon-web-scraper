@@ -7,7 +7,7 @@ export default function Home() {
 
         <h1 className="text-3xl mt-2 text-center text-black font-bold opacity-70 mb-5">Welcome to the Amazon Web Scraper</h1>
 
-        <h2 className="text-lg utalic text-center text-black/50">Web scraping isn't always better than APIs. Both approaches have their own strengths and limitations. </h2>
+        <h2 className="text-lg utalic text-center text-black/50">Save Cost. Web Scraping saves cost and time as it reduces the time involved in the data extraction task. </h2>
 
         <h3 className="text-lg text-center italic text-black/50">https://github.com/jeffmlb91</h3>
       </div>
