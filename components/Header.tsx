@@ -7,7 +7,7 @@ function Header() {
 
   //References the input to see what the user is typing. Using the useRef hook from React..Initailized with a value off null
   const inputRef = useRef<HTMLInputElement>(null) 
-  const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+  const handleSearch = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const input = inputRef.current?.value
@@ -19,7 +19,14 @@ function Header() {
 
     try {
       // call our API to activate the Scraper
-      
+        const response = await fetch('/api/activateScraper', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ search: input }),
+        });
+
     } catch (error) {
       // Handle any errors
     }
